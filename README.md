@@ -1,12 +1,12 @@
 # currency-exchange-info-api
-<b>2 Projects (Frontend -> API / Frontend -> Backend -> API) which get and handle info about currency.</b> <br />
+<b>2 Projects (Frontend -> API / Frontend -> Backend -> API) which get and handle info about currency.</b> 
 <hr />
 
 <b>Frontend part INFO:</b> <br />
-<p>The project has 2 Frontend parts (Projects). First part takes currency info from CSAS Server (WebAPI). Second part sends "GET" request with param and works with backend part of project.</p> <br />
+<p>The project has 2 Frontend parts (Projects). First part takes currency info from CSAS Server (WebAPI). Second part sends "GET" request with param and works with backend part of project.</p> 
 <hr />
 <b>Backend part INFO:</b> <br />
-<p>Backend part receives requests from Frontend and handles it. It works with Database and WebAPI (CSAS Server). If received param is "true"(true, 1, YES) then it takes data from DB. If DB is empty, it takes data from WebAPI and write the data to DB. If received param is "false"(false, 0, NO) it takes data from WebAPI and write the data to DB.</p> <br />
+<p>Backend part receives requests from Frontend and handles it. It works with Database and WebAPI (CSAS Server). If received param is "true"(true, 1, YES) then it takes data from DB. If DB is empty, it takes data from WebAPI and write the data to DB. If received param is "false"(false, 0, NO) it takes data from WebAPI and write the data to DB.</p> 
 <hr />
 <b>Database INFO:</b> <br />
 <p>Project was built on postgres db. You can download it <a href="https://www.postgresql.org/">HERE</a>. <br />

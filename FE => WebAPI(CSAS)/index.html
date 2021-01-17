@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!--Connects Main and Bootstrap CSS styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Exchange INFO Table</title>
+  </head>
+
+  <body>
+    <!--Bootstrap NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Exchange INFO Table</a>
+        <div>
+          <div class="me-auto mb-2 mb-lg-0"></div>
+          <!--Search line and button which calls search function from tableLoader.js-->
+          <div class="d-flex">
+            <input class="form-control me-2" id="searchLine" type="search" placeholder="Search by country" aria-label="Search">
+            <button class="btn btn-outline-success" onclick="searchBySearchLine()">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Table with headers which is loaded from server-->
+    <table class="table">
+      <thead class="table">
+        <tr>
+          <th scope="col">Version</th>
+          <th scope="col">Coutnry</th>
+          <th scope="col">Name</th>
+          <th scope="col">Short name</th>
+          <th scope="col">Valid from</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Value: Buy</th>
+          <th scope="col">Value: Sell</th>
+          <th scope="col">Value: Mid</th>
+          <th scope="col">Current: Buy</th>
+          <th scope="col">Current: Sell</th>
+          <th scope="col">Current: Mid</th>
+          <th scope="col">Move</th>
+        </tr>
+      </thead>
+
+      <!--Id for getting element by it from JS and change content-->
+      <tbody id="exchangeTableBody">
+      </tbody>
+    </table>
+
+    <!--Footer-->
+    <footer class="text-centered">
+      <p>&copy 2021 Sokolov Alexandr</p>
+    </footer>
+
+    <!--Connects JS scripts-->
+    <script src="js/tableLoader.js"></script> 
+  </body>
+</html>

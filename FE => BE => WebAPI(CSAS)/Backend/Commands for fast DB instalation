@@ -1,0 +1,15 @@
+Fast DB instalation
+You need to install docker
+
+
+Then open Terminal and run this commands
+
+
+1) docker run --name <YOUR NAME> -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+2) docker exec -it <YOUR NAME> bin/bash
+3) psql -U postgres
+4) CREATE DATABASE exchange_info_postgres_db;
+
+
+DB INFO:
+Database name: exchange_info_postgres_db

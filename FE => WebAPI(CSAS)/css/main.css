@@ -1,0 +1,32 @@
+/*Text aligning*/
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+/*Aligning - Error alert (Page)*/
+.verticalPadding{
+    padding-top: 10em;
+}
+
+.btn-go-back{
+    margin-top: 2em;
+}
+
+/*Footer view*/
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
